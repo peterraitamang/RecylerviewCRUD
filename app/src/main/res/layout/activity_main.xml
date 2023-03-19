@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="20dp"
+    android:orientation="vertical"
+    android:background="#DFF5FF">
+
+    <TextView
+        android:id="@+id/tv_title_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name: "
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/tv_title_name"
+        android:hint=" Enter Name"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/tv_title_Email"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_name"
+        android:text="Email: "
+        android:textSize="30dp"
+        android:textStyle="bold"/>
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Email"
+        android:layout_below="@id/tv_title_name"
+        android:layout_toRightOf="@id/tv_title_Email"
+        android:layout_marginTop="10dp"
+        android:textSize="20dp"
+        android:layout_marginLeft="5sp"/>
+    <Button
+        android:id="@+id/btn_add"
+        android:backgroundTint="#75D35B"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textColor="@color/white"
+        android:layout_below="@id/tv_title_Email"
+        android:layout_marginTop="20dp"/>
+    <Button
+        android:id="@+id/btn_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_add"
+        android:text="Clear"
+        android:backgroundTint="#ED4040"/>
+    <TextView
+        android:id="@+id/tv_title_items_added"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Items Added"
+        android:layout_below="@+id/btn_clear"
+        android:layout_marginTop="10dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_centerHorizontal="true"/>
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_title_items_added"
+        android:layout_marginTop="20dp"/>
+
+
+
+
+
+
+
+</RelativeLayout>
